@@ -1,0 +1,215 @@
+/* Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #ffffff;
+    font: 14px/1.5 Arial, Helvetica, sans-serif;
+    color: #262626;
+    overflow: hidden;
+}
+
+button {
+    border: none;
+    box-shadow: none;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+/* Globals */
+.container {
+    padding: 0 20px;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    border: none;
+}
+
+.btn2 {
+    display: inline;
+    padding: 10px 20px;
+    color: rgb(8, 85, 173);
+    background: #ffffff;
+    border-radius: 5px;
+    border: 1px solid #8d8c8c1c;
+}
+
+.btn2:hover {
+    background: #cecece63;
+}
+
+.sectioned {
+    border-bottom: 1px solid #74747471;
+    padding-bottom: 20px;
+}
+
+.text-fadded {
+    color: #919191;
+}
+
+.text-bold {
+    font-weight: bold;
+}
+
+.search-form input {
+    outline: none;
+    width: 480px;
+    padding: 10px 40px;
+    font-size: 16px;
+    border: 1px solid #e7e7e7b6;
+    background: #ffffff;
+    border-radius: 50px;
+}
+
+/* Nav-main */
+.nav-main {
+    margin-top: 10px;
+}
+
+.nav-main ul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.nav-main ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-main ul li a {
+    font-size: 12px;
+    padding: 5px 5px 0 5px;
+}
+.nav-main ul li a:hover {
+border-bottom: 1px solid #565656;
+}
+
+.nav-main ul li img.menu-btn {
+    width: 20px;
+    margin-left: 5px;
+}
+
+.nav-main ul li img.account-btn {
+    width: 30px;
+    border-radius: 50%;
+    margin-left: 5px;
+}
+
+
+
+
+
+/* Nav account */
+.nav-account {
+    display: none;
+    overflow-y: hidden;
+}
+
+
+/* Showcase */
+.showcase {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    gap: 20px;
+    padding-bottom: 320px;
+    color: #a5a5a5dc;
+}
+.showcase form i.fa-search {
+    position: relative;
+    right: -38px;
+}
+
+.showcase form .keyboard-link {
+    position: relative;
+    left: -38px;
+    color: #636262f8;
+}
+
+.showcase form ul {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.showcase form ul li {
+    padding: 10px;
+}
+
+.showcase form ul li .btn1 {
+    padding: 10px 20px;
+    border-radius: 3px;
+    background-color: #d3d2d271;
+    color: #262626d0;
+    font-size: 13px;
+}
+.showcase form ul li .btn1:hover {
+    text-decoration: none;
+    border: none;
+}
+
+.showcase .languages {
+    display: flex;
+    gap: 15px;
+    font-size: 12px;
+    color: #262626;
+}
+
+.showcase .languages ul {
+    display: flex;
+}
+.showcase .languages ul li {
+    margin: 0 10px;
+}
+
+.showcase .languages ul li a:hover {
+    border-bottom: 1px solid #565656;
+}
+
+
+@media(max-width: 768px) {
+    .nav-main {
+        display: inline-block;
+        float: right;
+    }
+
+    .nav-account .account {
+        padding: 20px 40px;
+    }
+
+    .showcase .logo img {
+        width: 150px;
+    }
+
+    .showcase form input {
+        width: 300px;
+    }
+
+
+
+    #search-page .container {
+        width: 100%;
+        margin-left: 0;
+    }
+
+
+
+}
+ 
